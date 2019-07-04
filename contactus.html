@@ -26,9 +26,9 @@
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                        <li class="nav-item active"><a class="nav-link" href=""><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -87,18 +87,80 @@
             </div>
         </div>
 
-        <div class="row row-content">
-           <div class="col-12">
-              <h3>Send us your Feedback</h3>
-           </div>
-            <div class="col-12 col-md-9">
-                Form goes here
+        <div class="row row-content ">
+            <div class="col-12">
+                <h3>Send us your Feedback</h3>
             </div>
-             <div class="col-12 col-md">
-            </div>
-       </div>
+        
+          <div class="col-12 col-md-9">
+             <form>
+                <div class="form-group row">
+                    <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                    <div class="col-md-10">
+                       <input type="text" class="form-control" id="firstname"
+                       placeholder="firstname">
+                    </div>
+                </div>
 
-    </div>
+                <div class="form-group row">
+                    <label for="firstname" class="col-md-2 col-form-label">Last Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="lastname" placeholder="lastname">
+                    </div>
+                 </div>
+
+                 <!--Extra classes to be added to separate area codes and stuff   -->
+                <div class="form-group row">
+                    <label for="telnum" class=" col-12 col-md-2 col-form-label">Tel num</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="telnum" placeholder="telnum">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="email" placeholder="email">
+                    </div>
+                </div>
+
+                <!-- Checkboxes here -->
+                <div class="form-group row">
+                    <div class="col-md-6 offset-md-2">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                            <label class="form-check-label" for="approve">
+                                <strong>May we contact you ?</strong>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                       <select class="form-control">
+                           <option>Tel</option>
+                            <option>Email</option>
+                       </select>
+                    </div>
+                </div>
+                <!-- Text area here -->
+                <div class="form-group row">
+                    <label for="feedback" class="col-md-2 col-form-label">Your feedback</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="feedback" name="feedback" 
+                        rows="12"></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                   <div class="offset-md-2 col-md-10">
+                      <button type="submit" class="btn btn-primary">
+                          send feedback
+                      </button>
+                   </div>
+                </div>
+             </form>  
+          </div>
+        </div>
+
 
     <footer class="footer">
         <div class="container">
