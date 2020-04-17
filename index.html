@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Ristorante Con Fusion</title>
+    <title>Happy Charting booking</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -14,50 +14,49 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 </head>
 
+<!--Header-->
 <body>
-    <!-- <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="container"> -->
-            <!-- <a class="navbar-brand mr-auto" href="./index.html"><img src="img/logo.png" height="30" width="41" alt=""></a> -->
-            <!-- <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto"> -->
-                    <!-- <li class="nav-item active">
-                            <a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a>
-                        </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="./about.html">
-                            <span class="fa fa-info fa-lg"></span> About</a> -->
-                    <!-- </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="fa fa-list fa-lg"></span> Menu</a> -->
-                    <!-- </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contactus.html">
-                            <span class="fa fa-address-card fa-lg"></span> Contact</a> -->
-                    <!-- </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-
-
     <div class="header">
         <div class="jumbotron jumbotron-fluid container-fluid">
             <h1 class="display-2">Happy Charting</h1>
-            <p class="lead">Acupunture Services.</p>
-            <!-- <p>Street Line 1, </br> Street Line 2, City, State, Zip</p> -->
+        
+            <div class="secondary">Acupunture</div>
         </div>
+        
     </div>
 
+    <nav class="nav nav-tabs justify-content-center">
+        <a href="/index.html" class="nav-item nav-link active">
+            <i class="fa fa-home"></i> Select Service or practitioner
+        </a>
+        <!-- <a href="practitioners.html" class="nav-item nav-link active">
+            <i class="fa fa-users"></i> practitioners
+        </a> -->
+        <!-- <a href="shanaye.html" class="nav-item nav-link disabled">
+            <i class="fa fa-user"></i> Shanaye
+        </a> -->
+        <a href="booking.html" class="nav-item nav-link disabled" tabindex="-1">
+            <i class="fa fa-calendar"></i> Booking time and date
+        </a>
+        <a href="bookingform.html" class="nav-item nav-link disabled" tabindex="-1">
+            <i class="fa fa-wpforms"></i></i> bookingform
+        </a>
+
+        <a href="confirmation.html" class="nav-item nav-link disabled" tabindex="-1">
+            <i class="fa fa-calendar-check-o"></i> confirmation
+        </a>
+    </nav>
+
+    <!--Header nav ends-->
 
 
-
+   
     <!-- the Main content -->
     <section class="container">
         <!-- First row -->
         <div class="row">
             <div class="col-4">
-                <h1>Book a service</h1>
+                <h4 class="booking-header">Book a service</h4>
                 <div class="list-group" id="list-tab" role="tablist">
                     <div class="list-group-item list-group-item-action active" id="list-com-acu-list" data-toggle="list" href="#list-com-acu"
                         role="tab" aria-controls="com-acu">Community Acupuncture</div>
@@ -67,12 +66,12 @@
                         aria-controls="massage">Massage</div>
                     <div class="list-group-item list-group-item-action" id="list-herbal-list" data-toggle="list" href="#list-herbal" role="tab"
                         aria-controls="herbal">Herbal Consultation</div>
+                    <br>
+
                     
-                    <br><a href="practitioners.html">
-                        <h1>Book a practitioner</h1>
-                    </a>
-
-
+                        <hr/>
+                        <h4>Book a practitioner</h4>
+                    
 
                     <div class="list-group-item list-group-item-action" id="list-maxie-list" data-toggle="list" href="#list-maxie" role="tab"
                         aria-controls="maxie">Maxie Ouyang</div>
@@ -97,14 +96,16 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Returning Patient - Community Acupuncture
+                                <h5>Returning Patient - Community Acupuncture</h5>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Service Description</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Book Appointment</a>
+                                <a href="booking.html" class="btn btn-primary">Book Appointment</a>
                             </div>
                         </div>
+
+                        <br/>
 
                         <div class="card">
                             <div class="card-header">
@@ -118,13 +119,14 @@
                         </div>
                     </div>
 
-
+                    <!-- priv-acu -->
                     <div class="tab-pane fade" id="list-priv-acu" role="tabpanel" aria-labelledby="list-priv-acu-list">
                         <!-- priv-acu -->
                         <h3>Private Acupuncture</h3>
                         <div class="intro-text">
                             <p>
-                                Service description
+                                Receive effective, affordable, and high quality acupuncture care in a peaceful group treatment room. Return visits are on
+                                a sliding scale of $30 - $50.
                             </p>
                         </div>
                         <div class="card">
@@ -137,7 +139,9 @@
                                 <a href="#" class="btn btn-primary">Book Appointment</a>
                             </div>
                         </div>
-                        
+
+                        <br />
+
                         <div class="card">
                             <div class="card-header">
                                 New Patient - Private Acupuncture
@@ -150,19 +154,18 @@
                         </div>
                     </div>
 
+                    <!-- massage -->
                     <div class="tab-pane fade" id="list-massage" role="tabpanel" aria-labelledby="list-massage-list">
-                        <!-- massage -->
-                        <p>Massage</p>
-
-                        <h3>Private Acupuncture</h3>
+                        <!-- massage -->                   
+                        <h3>Massage</h3>
                         <div class="intro-text">
                             <p>
-                                Service description
+                              Service description
                             </p>
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Returning Patient - Private Acupuncture
+                                Returning Patient - Massage
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Service Description</h5>
@@ -170,10 +173,11 @@
                                 <a href="#" class="btn btn-primary">Book Appointment</a>
                             </div>
                         </div>
-                        
+                            <br />
+
                         <div class="card">
                             <div class="card-header">
-                                New Patient - Private Acupuncture
+                                New Patient - Massage
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Service Description</h5>
@@ -181,13 +185,12 @@
                                 <a href="#" class="btn btn-primary">Book Appointment</a>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="tab-pane fade" id="list-herbal" role="tabpanel" aria-labelledby="list-herbal-list">
                         <!-- herbal -->
-                        
-                        <h3>Private Acupuncture</h3>
+
+                        <h3>Herbal consultation</h3>
                         <div class="intro-text">
                             <p>
                                 Service description
@@ -195,7 +198,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Returning Patient - Private Acupuncture
+                                Returning Patient - Herbal Consultation
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Service Description</h5>
@@ -203,10 +206,10 @@
                                 <a href="#" class="btn btn-primary">Book Appointment</a>
                             </div>
                         </div>
-                        
+                            <br />
                         <div class="card">
                             <div class="card-header">
-                                New Patient - Private Acupuncture
+                                New Patient - Herbal Consultation
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Service Description</h5>
@@ -215,37 +218,41 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--Maxie profile -->
 
                     <div class="tab-pane fade" id="list-maxie" role="tabpanel" aria-labelledby="list-maxie-list">
                         <!-- maxie -->
                         <p>Maxie</p>
                         <div class="media">
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">Media object</h5>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
-                                in faucibus.
+                            <div class="media">
+                                <img src="https://picsum.photos/200/300" class="align-self-start mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Maxie Ouyang</h5>
+                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
+                                        nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+                                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                </div>
                             </div>
-                            <img src="..." class="ml-3" alt="...">
                         </div>
                     </div>
-
+                    
                     <div class="tab-pane fade" id="list-shanaye" role="tabpanel" aria-labelledby="list-shanaye-list">
                         <!-- shanaye -->
                         <div class="media">
                             <img src="https://picsum.photos/200/300" class="align-self-start mr-3" alt="...">
                             <div class="media-body">
-                                <h5 class="mt-0">Top-aligned media</h5>
-                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum
-                                    in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
-                                    felis in faucibus.</p>
-                                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis
-                                    dis parturient montes, nascetur ridiculus mus.</p>
+                                <h5 class="mt-0">Shananye Middleton</h5>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                                    Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
+                                    nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                             </div>
                         </div>
-                        
-                        
-                        <p>Maxie</p>
+
                         <div class="card">
                             <div class="card-header">
                                 Returning Patient - Community Acupuncture
@@ -259,66 +266,53 @@
                     </div>
 
                     <div class="tab-pane fade" id="list-sarge" role="tabpanel" aria-labelledby="list-sarge-list">
-                        <!-- sarge -->
-                        <p>Sarge</p>
+                        <!-- sarge profile -->
+                        <div class="media">
+                            <img src="https://picsum.photos/200/200" class="align-self-start mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0">Sarge Middleton</h5>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum
+                                    in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+                                    felis in faucibus.</p>
+                                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis
+                                    dis parturient montes, nascetur ridiculus mus.</p>
+                            </div>
                     </div>
                 </div>
             </div>
     </section>
 
 
-
-
-    <!-- <div class="col col-sm order-sm-first col-md">
-                <div class="media">   
-                </div>
-            </div>
-        </div> -->
-
-    
-
-    
-
-    <footer class="footer" >
+    <footer class="footer">
         <div class="container">
-            <div class="row">             
-                <!-- <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul> -->
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+            <div class="row">
+                
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-auto ">
+                            <div class ="address-heading">
+                                <h5> Address</h5>
+                            </div>
+                            <address class="address">
+                                121, Clear Water Bay Road
+                                <br> Clear Water Bay, Kowloon
+                                 HONG KONG
+                                <br> Tel.: +852 1234 5678
+                                <br> Fax: +852 8765 4321
+                                <br> Email:
+                                <a href="mailto:confusion@food.net">confusion@food.net</a>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <p class="copyright">© Copyright 2020 Happy Charting</p>
+                        </div>
                     </div>
                 </div>
+                
             </div>
-           <div class="row justify-content-center">             
-                <div class="col-auto">
-                    <p>© Copyright 2020 Happy Charting</p>
-                </div>
-           </div>
-        </div>
+       
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

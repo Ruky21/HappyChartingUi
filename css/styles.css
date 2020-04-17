@@ -8,30 +8,192 @@
   border-bottom: 1px ridge;
   min-height: 400px; }
 
-.footer {
-  background-color: #D1C4E9;
-  margin: 0px auto;
-  padding: 20px 0px 20px 0px; }
-
 .jumbotron {
   padding-top: -5px !important;
-  background: #9575cd;
-  color: floralwhite;
+  background : #3E3F3A;
+  color: white;
   height: 400px; }
-  
+
   .jumbotron .display-2,
   .jumbotron .lead {
-    text-align: center; }
+    text-align: center;
+   }
+
+   .secondary{
+     text-align: center;
+     font-size:2rem;
+     color:white
+   }
+
+ .nav-tabs .nav-link
+  {
+   color : #3E3F3A;
+ }
+
+ .nav-tabs .nav-link.disabled {
+   color: #3E3F3A;
+   background-color: transparent;
+   border-color: transparent;
+ }
+
+
+.container {
+  margin-top: 50px; }
+
+  .col-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    margin-top: 28px;
+  }
+
+  .booking-header{
+    color: #3E3F3A
+  }
+
+  .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #325D88;
+    border-color:#325D88;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color : #325D88;
+    border-color: #325D88;
+  }
+
+
+  
+
+.footer {
+  background-color: #3E3F3A;
+  margin-top: 50px;
+  /* padding: 20px 0px 20px 0px;  */
+}
+
+  .address-heading {
+    color:white;
+    margin: 20px 5px;
+    text-align: center;
+  }
 
 .address {
-  font-size: 80%;
-  margin: 0px;
-  color: #0f0f0f; }
+  font-size: 1.1rem;
+  margin: 10px;
+  color: white; }
 
 .about {
   margin-top: 10px; }
 
-.navbar-dark {
-  background: #512DA8; }
+/* .navbar-dark {
+  background: #512DA8; } */
+
+
+
+
+/*Bootstrap calder Css**/
+.calendar-toolbar {
+  margin-bottom: 10px;
+}
+
+.calendar-month-row {
+  height: 75px;
+}
+
+.calendar-prior-months-date {
+  color: #DDD;
+}
+
+.calendar-current-date {
+  text-align: center;
+  display: inline-block;
+  width: 115px;
+}
+
+
+/* CALENDER CSS BEGINS */
+* {
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
+
+body {
+  font-family: Verdana, sans-serif; }
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center; }
+
+.month ul {
+  margin: 0;
+  padding: 0; }
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+.month .prev {
+  float: left;
+  padding-top: 10px; }
+
+.month .next {
+  float: right;
+  padding-top: 10px; }
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd; }
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center; }
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0; }
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777; }
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important; }
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%; } }
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%; }
+
+  .days li .active {
+    padding: 2px; } }
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%; } }
+/* CALENDER CSS ENDS */
 
 /*# sourceMappingURL=styles.css.map */
